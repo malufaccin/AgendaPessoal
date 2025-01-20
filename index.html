@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Agenda Pessoal</h1>
+    </header>
+    <main>
+        <section id="add-task">
+            <h2>Adicionar Tarefa</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Título" required>
+                <input type="date" id="task-date" required>
+                <textarea id="task-description" placeholder="Descrição"></textarea>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+        <section id="tasks-list">
+            <h2>Minhas Tarefas</h2>
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
